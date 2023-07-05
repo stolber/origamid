@@ -1,0 +1,5 @@
+o que foi aplicado:
+
+div
+span
+display: inline, inline-block, block

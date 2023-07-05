@@ -1,0 +1,12 @@
+display: flex; (caixa)
+    gap: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center; /* Simplificando codigo acima */
+
+item:
+    flex-growflex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 1;
+    flex: 1; /* Atalho para código acima */

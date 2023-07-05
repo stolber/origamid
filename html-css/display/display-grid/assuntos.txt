@@ -1,0 +1,14 @@
+display: grid;
+    
+conteudo
+    grid-template-columns: 1fr 1fr (explicar fr e auto)
+    gap: 20px; (explicar)
+    justify-content: citar
+    align-items: citar
+    place-content: explicar
+	
+
+itens
+    grid-column: explicar exemplo 1/-1 e span
+place - self: opções explicar
+grid-row

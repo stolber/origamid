@@ -1,0 +1,148 @@
+:root {
+    --cor1: #ee2211;
+    --cor2: #990000;
+    --cor3: #f7f7f7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: grid;
+    gap: 40px;
+    justify-items: center;
+}
+
+body { 
+    font-family: Arial,Helvetica,sans-serif;
+    background: #f7f7f7;
+    display: grid;
+    gap: 2.75rem;
+    margin-top: 2.75rem;
+    justify-items: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 62.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu a {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: black;
+    display: block;
+    border: 2px solid white;
+}
+
+.menu a:hover {
+    border: 2px solid var(--cor1);
+}
+
+.introducao {
+    position: relative;
+    background: white;
+    padding: 40px;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+    gap: 20px;
+}
+
+.ver-mais {
+    background: var(--cor1);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.ver-mais:hover {
+    background: var(--cor2);
+}
+
+.introducao::before {
+    /* display: inline-block; - DISPLAY GRID DEFINE COMO BLOCO */ 
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 60px;
+    height: 4px;
+    background: #ee2211;
+}
+
+
+
+.subtitulo {
+    background-image: url("../imagens/onda.svg");
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+    
+}
+
+.vantagens {
+    background: white;
+    padding: 40px;    
+}
+
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px; /* 1° VALOR DE LINHA E 2° VALOR COLUNA */
+    padding: 20px;
+    border-left: 4px solid white;
+}
+
+.vantagens-item p {
+    grid-column: 2;
+}
+
+.vantagens-item:nth-child(odd) {
+    background-color: var(--cor3);
+}
+
+.vantagens-item:hover {
+    border-left: 4px solid var(--cor1);
+}
+
+.rodape {
+    background: white;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}

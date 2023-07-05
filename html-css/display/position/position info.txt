@@ -1,0 +1,15 @@
+position
+
+fixed:
+top / right / bottom / left
+
+relative:
+top / right / bottom / left
+
+absolute:
+top / right / bottom / left
+
+z-index:
+-1 / 1 / 0 explicar
+
+explicar cada position com exemplos simples 

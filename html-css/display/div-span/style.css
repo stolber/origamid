@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+div {
+    background: #111;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+p {
+    color: white;
+}
+
+.preco {
+    color: yellow;
+    font-weight: bold;
+}
+
+strong {
+    color: yellow;
+    font-weight: 300;
+}
+
+a {
+    display: inline-block;
+    background-color: yellow;
+    border-radius: 4px;
+    padding: 10px;
+    text-decoration: none;
+    color: #111;
+}
