@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 
 body {
-    margin: 0px auto;
     padding: 0px;
+    margin: 0px;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
-    max-width: 85vw;
+    /* max-width: 85vw; */
     align-content: center;
 }
 
@@ -13,6 +13,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 20px;
+    max-width: 85vw;
+    margin: 0px auto;
 }
 
 .menu {
@@ -37,6 +39,8 @@ main {
     gap: 100px;
     padding: 40px 20px;
     align-items: center;
+    max-width: 85vw;
+    margin: 0px auto;
 }
 
 img {
@@ -47,6 +51,7 @@ h1 {
     font-size: 4.5rem;
     line-height: 80px;
     position: relative;
+    margin: 0px;
 }
 
 h1::before {
@@ -57,7 +62,7 @@ h1::before {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -35%;
+    top: -85px;
     right: 340px;
     z-index: -1;
 }
@@ -68,21 +73,15 @@ p {
     display: inline-block;
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 40px 20px;
-    gap: 100px;
-}
-
 h2 {
     font-size: 8rem;
     font-weight: bold;
     text-transform: uppercase;
-    display: flex;
     color: #e0e0e0;
     word-break: break-all;
     font-weight: bold;
+    margin: 10px auto;
+    line-height: 1;
 }
 
 strong {
@@ -94,16 +93,24 @@ h3 {
     font-weight: bold;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 0;
+}
+
+/* CONFIGURAÇÕES SEÇÃO DE EXPERIENCIAS */
+
+.sobre-experiencias {
+    max-width: 85vw;
+    margin: 0px auto;
+    max-width: 85vw;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px 20px;
+    gap: 100px;
 }
 
 .exp-texto {
@@ -121,6 +128,7 @@ ul {
     border-radius: 4px;
     padding: 10px 20px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .empresa::before {
@@ -136,7 +144,7 @@ ul {
 
 .empresa-ano {
     position: absolute;
-    top: 28px;
+    top: 29px;
     left: -40px;
     font-size: 14px;
     color: #525252;
@@ -153,4 +161,109 @@ ul {
 .empresa-texto {
     font-size: 14px;
     margin: 0px;
+}
+
+/* CONFIGURAÇÕES SEÇÃO DE FORMAÇÃO */
+
+.sobre-formacao {
+    background: #141414;
+    color: #ffffff;
+}
+
+.sobre-formacao-container {
+    max-width: 85vw;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px 20px;
+    gap: 100px;
+}
+
+.formacao-titulo {
+    color: black;
+}
+
+.formacao-texto {
+    color: #a3a3a3;
+    max-width: 40ch;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.formacao-strong {
+    color: white;
+}
+
+.formacao-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formacao-box {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    height: 120px;
+    position: relative;
+}
+
+.formacao-tipo {
+    font-size: 14px;
+    color: #a3a3a3;
+    text-align: left;
+    padding: 0px;
+}
+
+.formacao-box::before {
+    content: "";
+    display: block;
+    background: linear-gradient(#b6f829,#67dd0a);
+    width: 4px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: -4px;
+}
+
+
+.cursos {
+    margin-bottom: 40px;
+}
+
+.idiomas {
+    margin-bottom: 40px;
+}
+
+.cursos-titulo {
+    position: relative;
+}
+
+.idiomas-titulo {
+    position: relative;
+}
+
+.cursos-titulo::before {
+    content: "";
+    background: url(../imagens/cursos.svg);
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -35px;
+    width: 25px;
+    height: 25px;
+}
+
+.idiomas-titulo::before {
+    content: "";
+    background: url(../imagens/idiomas.svg);
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -35px;
+    width: 25px;
+    height: 25px;
 }
