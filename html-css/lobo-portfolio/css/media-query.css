@@ -98,7 +98,7 @@
         font-size: 1rem;
     }
     .sobre-experiencias {
-        max-width: 85vw;
+        max-width: 80vw;
     }
     .exp-texto {
         margin-bottom: 40px;
@@ -111,6 +111,12 @@
         margin-right: 10px;
         margin-bottom: 5px;
     }
+    .formacao-boxes {
+        grid-template-columns: 1fr;
+    }
+    .formacao-box {
+        margin-bottom: 20px;
+    }
     .contato {
         gap: 0px;
         padding: 10px;
@@ -119,11 +125,23 @@
         gap: 0px;
     }
     footer::before {
-        top: -50px;
-        width: 100px;
-        height: 90px;
+        top: -32px;
+        left: 40px;
+        width: 65px;
+        height: 65px;
+    }
+    footer ul {
+        display: block;
+        margin-top: 25px;
+    }
+    footer li {
+        font-size: 1rem;
+    }
+    footer a {
+        font-size: 1rem;
     }
     .direitos p {
         font-size: 1rem;
     }
+    
 }
