@@ -107,6 +107,10 @@
         grid-template-columns: 1fr;
         gap: 0px;
     }
+    .empresa li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
     .contato {
         gap: 0px;
         padding: 10px;
