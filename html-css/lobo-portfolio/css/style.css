@@ -19,18 +19,25 @@ header {
 
 .menu {
     display: flex;
+    gap: 20px;
 }
 
 li {
     list-style: none;
 }
 
-a {
+.menu a {
     text-decoration: none;
     color: black;
     font-size: 18px;
     padding: 1rem 2rem;
     text-align: left;
+    border: 2px solid white;
+}
+
+.menu a:hover {
+    border: 2px solid #70DA1C;
+    border-radius: 2px;
 }
 
 main {
@@ -168,7 +175,7 @@ ul {
 .sobre-formacao {
     background: #141414;
     color: #ffffff;
-    height: 100vh;
+    padding: 20px;
 }
 
 .sobre-formacao-container {
@@ -351,10 +358,15 @@ footer a {
     font-size: 2.5rem;
     color: white;
     padding: 0px;
+    text-decoration: none;
     font-weight: bold;
+    border: 0px solid black;
 }
 
 .direitos {
     text-align: center;
+}
+
+.direitos p {
     font-size: 1.2rem;
 }
