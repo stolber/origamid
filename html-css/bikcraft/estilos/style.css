@@ -8,7 +8,7 @@
     --onda:url("../imagens/onda-clara.svg");
 }
 
-@media (prefers-colors-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --cor1: #ee2211;
         --cor1-escura: #990000;
