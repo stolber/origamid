@@ -21,13 +21,13 @@
     border-left: 2px solid var(--cor-2);
 }
 
-.parceiros li:first-child
+.parceiros li:first-child,
 .parceiros li:nth-child(5) {
     border-left: none;
 }
 
 .parceiros li:nth-child(n + 5) {
-border-top: 2px solid var(--cor-2);
+    border-top: 2px solid var(--cor-2);
 }
 
 .parceiros img {
@@ -43,6 +43,9 @@ border-top: 2px solid var(--cor-2);
     }
     .parceiros ul {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .parceiros li {
+        padding: 20px;
     }
     .parceiros li:nth-child(n + 3) {
         border-top: 2px solid var(--cor-2);

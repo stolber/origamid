@@ -1,22 +1,20 @@
 /* CONFIG GLOBAIS */
 @import "./global/global.css";
 
-
 /* TIPOGRAFIA */
 @import "./utilidades/tipografia.css";
-
 
 /* HEADER */
 @import "./global/header.css";
 
+/* FOOTER */
+@import "./global/footer.css";
 
 /* UTILIDADES */
 @import "./utilidades/componentes.css";
 
-
 /* CORES */
 @import "./utilidades/cores.css";
-
 
 /* HOME INTRO */
 @import "./home/introducao.css";
@@ -27,6 +25,12 @@
 /* PARCEIROS */
 @import "./home/parceiros.css";
 
+/* DEPOIMENTO */
+@import "./home/depoimento.css";
+
 /* BICICLETAS */
-@import "./bicicletas/bicicletas-lista.css"
+@import "./bicicletas/bicicletas-lista.css";
+
+/* SEGUROS */
+@import "./seguros/seguros.css";
 
