@@ -10,7 +10,7 @@
     </script>
 </head>
 <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">Faq</a></li>
@@ -18,7 +18,7 @@
             <li><a href="https://github.com/stolber">Dev →</a></li>
         </ul>
     </nav>
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
         <ul class="animais-lista js-tabmenu">
             <li><img src="img/imagem1.jpg"></li>
@@ -73,9 +73,32 @@
             </section>
         </div>
     </section>
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section animais-fotos js-scroll js-slide" id="animais-fotos">
+        <h1 class="titulo">ANIMAIS</h1>
+        <div class="animais-fotos-icones">
+            <ul>
+                <li><img src="./img/foto1-thumb.jpg"></li>
+                <li><img src="./img/foto2-thumb.jpg"></li>
+                <li><img src="./img/foto3-thumb.jpg"></li>
+                <li><img src="./img/foto4-thumb.jpg"></li>
+                <li><img src="./img/foto5-thumb.jpg"></li>
+                <li><img src="./img/foto6-thumb.jpg"></li>
+            </ul>
+        </div>
+        <div class="animais-fotos-full">
+            <ul>
+                <li><img src="./img/foto1.jpg"></li>
+                <li><img src="./img/foto2.jpg"></li>
+                <li><img src="./img/foto3.jpg"></li>
+                <li><img src="./img/foto4.jpg"></li>
+                <li><img src="./img/foto5.jpg"></li>
+                <li><img src="./img/foto6.jpg"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="grid-section faq js-scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista">
+        <dl class="faq-lista js-accordion">
             <dt>Qual a idade dos animais?</dt>
             <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
             <dt>Eles são fantásticos?</dt>
@@ -86,7 +109,7 @@
             <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
         </dl>
     </section>
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
         <h1 class="titulo">CONTATO</h1>
         <div class="mapa">
             <img src="./img/mapa.png">

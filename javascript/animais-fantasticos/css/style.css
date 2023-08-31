@@ -131,6 +131,40 @@ html.textomaior {
     margin-bottom: 3rem;
 }
 
+.animais-fotos-icones {
+    grid-column: 1 / -1;
+}
+
+.animais-fotos-icones ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animais-fotos-icones img {
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: contrast 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animais-fotos-icones img:hover {
+    filter: contrast(0.9);
+    transform: scale(1.1);
+}
+
+.animais-fotos-full {
+    grid-column: 1 / -1;
+}
+
+.animais-fotos-full ul {
+    display: flex;
+}
+
+.animais-fotos-full img {
+    display: none;
+}
+
 .faq-lista {
     grid-column: 2 / 4;
 }
@@ -240,4 +274,50 @@ html.textomaior {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.js-accordion dd {
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: "▼";
+    margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+    content: "▲";
+    margin-left: 10px;
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: slidedown .6s forwards;
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .4s;
+}
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .4s;
+}
+
+.js .js-slide.ativo {
+    display: block;
 }
