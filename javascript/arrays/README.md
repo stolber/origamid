@@ -140,5 +140,3 @@ const estáPresente = array.includes("c");
 
 console.log(estáPresente); // true
 ```
-
-Essas são apenas algumas das principais funções para serem
